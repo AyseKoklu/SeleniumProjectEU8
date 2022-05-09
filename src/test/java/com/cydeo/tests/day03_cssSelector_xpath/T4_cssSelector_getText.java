@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class T4_CssSelector_GetText {
+public class T4_cssSelector_getText {
 
     public static void main(String[] args) {
 

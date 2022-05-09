@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class T3_GetAttribute_CssSelector {
+public class T3_getAttribute_cssSelector {
     public static void main(String[] args) {
 
         // TC #3: NextBaseCRM, locators, getText(), getAttribute() practice

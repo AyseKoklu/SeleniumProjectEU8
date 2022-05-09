@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class T5_GetText_GetAttribute {
+public class T5_getText_getAttribute {
 
     public static void main(String[] args) {
 

@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class T1_Locators_GetText {
+public class T1_Locators_getText {
 
     public static void main(String[] args) {
 
