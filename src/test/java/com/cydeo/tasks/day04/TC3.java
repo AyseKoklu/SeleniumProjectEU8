@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class TC6 {
+public class TC3 {
 
     WebDriver driver;
 
