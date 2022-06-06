@@ -41,4 +41,12 @@ public class WebTableUtils {
 
     }
 
+    // • Method name: getTableGetEmail()
+    // • Return type: void
+    // • Arg1: WebDriver driver
+    // • Arg2: String tableNum
+    // • Arg3: String firstName
+    public static void getTableGetEmail(WebDriver driver, String tableNum, String firstName){
+    }
+
 }

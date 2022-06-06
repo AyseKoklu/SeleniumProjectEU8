@@ -10,6 +10,7 @@ import java.util.Set;
 public class BrowserUtils {
 
     // This method will accept int (in seconds) and execute Thread.sleep for given duration
+
     public static void sleep(int second) {
         second *= 1000;
         try {
@@ -42,8 +43,10 @@ public class BrowserUtils {
         Assert.assertTrue(actualTitle.contains(expectedInTitle));
     }
 
+
     // This method accepts a String "expectedTitle" and Asserts if it is true
     public static void verifyTitle(WebDriver driver, String expectedTitle) {
+
         Assert.assertEquals(driver.getTitle(), expectedTitle);
 
     }
