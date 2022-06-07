@@ -46,7 +46,10 @@ public class WebTableUtils {
     // • Arg1: WebDriver driver
     // • Arg2: String tableNum
     // • Arg3: String firstName
-    public static void getTableGetEmail(WebDriver driver, String tableNum, String firstName){
+    public static void getTableGetEmail(WebDriver driver, String tableNum, String firstName) {
+        String locatorTable = "//table[@id='table" + tableNum + "']";
+        WebElement getTable = driver.findElement(By.xpath(locatorTable));
+        String locatorEmail = locatorTable + "//td[.='" + firstName + "']/following-sibling::td[1]";
     }
 
 }

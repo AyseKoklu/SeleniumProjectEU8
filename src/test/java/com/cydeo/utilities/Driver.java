@@ -4,12 +4,14 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+
 import java.util.concurrent.TimeUnit;
 
 public class Driver {
 
     // Creating a private constructor, so we are closing access to the object of this class from outside the class
-    private Driver() {}
+    private Driver() {
+    }
 
     // We make WebDriver private, because we want to close access from outside the class.
     // We make it static because we will use it in a static method.
@@ -39,12 +41,9 @@ public class Driver {
                     driver.manage().window().maximize();
                     driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
                     break;
-
             }
         }
-
         return driver;
-
     }
 
     // This method will make sure our driver value is always null after using quit() method
