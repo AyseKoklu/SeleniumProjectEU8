@@ -25,6 +25,7 @@ public class T1_Circle_Drag_N_Drop {
 
         Actions actions = new Actions(Driver.getDriver());
         actions.dragAndDrop(smallCircle, bigCircle).perform();
+        // actions.clickAndHold(smallCircle).moveToElement(bigCircle).release().perform();
 
         // 3. Assert:
         // -Text in big circle changed to: “You did great!”
