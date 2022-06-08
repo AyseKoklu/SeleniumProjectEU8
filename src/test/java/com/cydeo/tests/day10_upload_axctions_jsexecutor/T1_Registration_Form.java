@@ -6,6 +6,7 @@ import com.github.javafaker.Faker;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class T1_Registration_Form {
@@ -52,7 +53,7 @@ public class T1_Registration_Form {
         inputPhoneNumber.sendKeys(faker.numerify("###-###-####)"));
 
         // 9. Select a gender from radio buttons
-        WebElement inputGender = Driver.getDriver().findElement(By.xpath("//input[@gender='female']"));
+        WebElement inputGender = Driver.getDriver().findElement(By.xpath("//input[@value='female']"));
         inputGender.click();
 
         // 10.Enter date of birth
@@ -60,16 +61,27 @@ public class T1_Registration_Form {
         inputBirthday.sendKeys("09/10/1997");
 
         // 11.Select Department/Office
-        Select departmentDropdown = new Select(Driver.getDriver().findElement(By.xpath("//sleect[@name='department']")));
+        Select departmentDropdown = new Select(Driver.getDriver().findElement(By.xpath("//select[@name='department']")));
         departmentDropdown.selectByIndex(faker.number().numberBetween(1, 9));
 
         // 12.Select Job Title
-
+        Select jobTitleDropdown = new Select(Driver.getDriver().findElement(By.xpath("//select[@name='job_title']")));
+        jobTitleDropdown.selectByIndex(faker.number().numberBetween(1,8));
 
         // 13.Select programming language from checkboxes
+        WebElement programmingLanguage = Driver.getDriver().findElement(By.xpath("//input[@value='java']"));
+        programmingLanguage.click();
+
         // 14.Click to sign up button
-        // 15.Verify success message “You’ve successfully completed registration.” is displayed.
+        WebElement submitButton = Driver.getDriver().findElement(By.xpath("//button[@type='submit']"));
+        submitButton.click();
+
+        // 15.Verify success message “You’ve successfully completed registration!” is displayed.
+        WebElement wellDoneText = Driver.getDriver().findElement(By.xpath("//p"));
+        String expectedWellDoneText = "You’ve successfully completed registration!";
+        // String actualWellDoneText = wellDoneText;
+
+        Assert.assertTrue(wellDoneText.isDisplayed());
+
     }
-
-
 }

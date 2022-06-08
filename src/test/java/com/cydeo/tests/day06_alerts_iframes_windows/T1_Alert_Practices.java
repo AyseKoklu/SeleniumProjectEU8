@@ -105,7 +105,7 @@ public class T1_Alert_Practices {
         String expectedResultText = "You entered: hello";
         String actualResultText = resultText.getText();
 
-        Assert.assertEquals(expectedResultText, actualResultText);
+        Assert.assertEquals(actualResultText, expectedResultText);
 
     }
 
