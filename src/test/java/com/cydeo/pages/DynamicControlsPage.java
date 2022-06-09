@@ -21,7 +21,7 @@ public class DynamicControlsPage {
     public WebElement checkBox;
 
     @FindBy (css = "p[id='message']")
-    public WebElement itsGoneMessage;
+    public WebElement message;
 
     @FindBy (xpath = "//button[.='Enable']")
     public WebElement enableButton;
