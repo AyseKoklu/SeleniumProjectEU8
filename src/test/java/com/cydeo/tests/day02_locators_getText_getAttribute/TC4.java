@@ -1,4 +1,4 @@
-package com.cydeo.tasks.day02;
+package com.cydeo.tests.day02_locators_getText_getAttribute;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;

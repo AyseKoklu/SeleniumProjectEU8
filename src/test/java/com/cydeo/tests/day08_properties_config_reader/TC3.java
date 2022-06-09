@@ -1,4 +1,4 @@
-package com.cydeo.tasks.day08;
+package com.cydeo.tests.day08_properties_config_reader;
 
 import com.cydeo.utilities.WebDriverFactory;
 import com.cydeo.utilities.WebTableUtils;

@@ -1,4 +1,4 @@
-package com.cydeo.tasks.day04;
+package com.cydeo.tests.day04_findElements_checkboxes_practice;
 
 import com.cydeo.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
